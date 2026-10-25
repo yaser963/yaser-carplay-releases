@@ -6,6 +6,6 @@ Source is private. Install only APKs published as Releases on this repository.
 
 ## Current
 
-- **[v0.2.21-yaser.3](https://github.com/yaser963/yaser-carplay-releases/releases/tag/v0.2.21-yaser.3)** — `Yaser-v0.2.21-yaser.3.apk`
+- **[v0.2.21-yaser.4](https://github.com/yaser963/yaser-carplay-releases/releases/tag/v0.2.21-yaser.4)** — `Yaser-v0.2.21-yaser.4.apk`
 
 Download the `.apk` from the Release page (not from the git tree). The in-app updater installs newer matching tags automatically when the car is online.
