@@ -3,7 +3,7 @@
 **Yaser** is a CarPlay receiver app for **BYD DiLink** head units (wired USB and wireless).  
 Install the APK on the **car**, not on the iPhone. Package id: `com.yaser.carplay`.
 
-This repository is **public and binaries-only**. It hosts GitHub Releases that the app downloads when you check for updates in the car. Source code lives in a separate private repo.
+This repository is **public and binaries-only**. It hosts GitHub Releases that the app downloads when you check for updates in the car.
 
 ## Current release
 
@@ -31,8 +31,6 @@ With internet on the head unit:
 The app contacts this repository’s Releases over HTTPS, downloads a newer matching APK, verifies checksum + signature, and installs it. You do not need a flash drive for later updates.
 
 ## Features
-
-Based on [DiPlay](https://github.com/shihabal3amri/DiPlay) with [DiPlay-CN](https://github.com/serein-morii/DiPlay-CN)-style extras, branded as Yaser:
 
 - Wired and wireless CarPlay for BYD DiLink
 - Dashboard / cluster-oriented navigation helpers (turn card and related CN UI)
