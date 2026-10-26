@@ -1,3 +1,5 @@
+**English** | [العربية](README.ar.md)
+
 # Yaser CarPlay for BYD
 
 **Yaser** is a CarPlay receiver app for **BYD DiLink** head units (wired USB and wireless).  
