@@ -9,7 +9,7 @@ This repository is **public and binaries-only**. It hosts GitHub Releases that t
 
 ## Current release
 
-- **[v0.2.21-yaser.4](https://github.com/yaser963/yaser-carplay-releases/releases/tag/v0.2.21-yaser.4)** — download `Yaser-v0.2.21-yaser.4.apk` from the Release page (not from the git tree).
+- **[v0.2.22-yaser.1](https://github.com/yaser963/yaser-carplay-releases/releases/tag/v0.2.22-yaser.1)** — download `Yaser-v0.2.22-yaser.1.apk` from the Release page (not from the git tree).
 
 Always use the **Releases** tab. Ignore empty branches / tree files.
 
@@ -21,7 +21,7 @@ Always use the **Releases** tab. Ignore empty branches / tree files.
 4. Prefer the car’s **built-in 5 GHz hotspot** (or a known-good USB data cable).
 5. On the iPhone: Bluetooth + Wi‑Fi on → pair / join → Connect in Yaser → accept CarPlay prompts.
 
-If you previously installed `yaser.1` or `yaser.2`, uninstall that build once before installing `yaser.3` or newer (signing key changed at `.3`). From `.3` → `.4` and later, updates can install over the top.
+If you previously installed `yaser.1` or `yaser.2`, uninstall that build once before installing `yaser.3` or newer (signing key changed at `.3`). From `.3` onward (including `0.2.22-yaser.1`), updates can install over the top.
 
 ## Updates from the car (no USB stick)
 
@@ -32,24 +32,21 @@ With internet on the head unit:
 
 The app contacts this repository’s Releases over HTTPS, downloads a newer matching APK, verifies checksum + signature, and installs it. You do not need a flash drive for later updates.
 
-## Features
+Notes:
 
+- Android needs a **full signed APK** (not a tiny binary patch). Interrupted downloads **resume**; a verified cache skips re-download.
+- Publishing a Release here is what cars see. Source pushes alone do not update the car.
+
+## Features (0.2.22-yaser.1)
+
+- DiPlay **0.2.22** baseline + DiPlay-CN extras
+- Music clock / cluster music improvements
+- Hotspot reliability improvements
+- USB microphone uplink fixes
+- Clearer connection failure messages
+- Optional **music over car Bluetooth**, navigation/prompts/calls still on CarPlay
 - Wired and wireless CarPlay for BYD DiLink
-- Dashboard / cluster-oriented navigation helpers (turn card and related CN UI)
-- Boot ADB repair and Bluetooth pause helpers (when ADB / permissions allow)
-- Richer connection and display settings
 - In-car update checks against this Releases feed
-- Diagnostic reporting for connection issues
-
-## Fixes in recent Yaser builds
-
-Included in `0.2.21-yaser.4` (ported from merged DiPlay work):
-
-- More reliable wireless Bonjour startup (avoid unnecessary reverse DNS)
-- Hotspot interface detection that ignores cellular modem interfaces (`rmnet*` / `ccmni*`) common on BYD units
-- Wired USB: retry CarPlay start when the phone’s USB network comes up late, with a longer start window for Save & reconnect cases
-
-Still environment-dependent (no guaranteed fix in this APK alone): some iOS 27 wireless cases, rare USB detection vs native CarPlay, and Bluetooth call duplex conflicts when ADB is unavailable — prefer 5 GHz car hotspot and a known-good cable as fallbacks.
 
 ## Trust & security
 
