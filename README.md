@@ -9,7 +9,7 @@ This repository is **public and binaries-only**. It hosts GitHub Releases that t
 
 ## Current release
 
-- **[v0.2.22-yaser.1](https://github.com/yaser963/yaser-carplay-releases/releases/tag/v0.2.22-yaser.1)** — download `Yaser-v0.2.22-yaser.1.apk` from the Release page (not from the git tree).
+- **[v0.2.22-yaser.2](https://github.com/yaser963/yaser-carplay-releases/releases/tag/v0.2.22-yaser.2)** — download `Yaser-v0.2.22-yaser.2.apk` from the Release page (not from the git tree).
 
 Always use the **Releases** tab. Ignore empty branches / tree files.
 
@@ -21,7 +21,7 @@ Always use the **Releases** tab. Ignore empty branches / tree files.
 4. Prefer the car’s **built-in 5 GHz hotspot** (or a known-good USB data cable).
 5. On the iPhone: Bluetooth + Wi‑Fi on → pair / join → Connect in Yaser → accept CarPlay prompts.
 
-If you previously installed `yaser.1` or `yaser.2`, uninstall that build once before installing `yaser.3` or newer (signing key changed at `.3`). From `.3` onward (including `0.2.22-yaser.1`), updates can install over the top.
+If you previously installed `yaser.1` or `yaser.2`, uninstall that build once before installing `yaser.3` or newer (signing key changed at `.3`). From `.3` onward (including `0.2.22-yaser.2`), updates can install over the top.
 
 ## Updates from the car (no USB stick)
 
@@ -37,14 +37,18 @@ Notes:
 - Android needs a **full signed APK** (not a tiny binary patch). Interrupted downloads **resume**; a verified cache skips re-download.
 - Publishing a Release here is what cars see. Source pushes alone do not update the car.
 
-## Features (0.2.22-yaser.1)
+## Features (0.2.22-yaser.2)
 
 - DiPlay **0.2.22** baseline + DiPlay-CN extras
 - Music clock / cluster music improvements
-- Hotspot reliability improvements
+- Hotspot reliability improvements (incl. firmware that marks a live tethered iface “down”)
 - USB microphone uplink fixes
 - Clearer connection failure messages
 - Optional **music over car Bluetooth**, navigation/prompts/calls still on CarPlay
+- Optional **calls through the media output** (experimental) for head units where music plays but CarPlay calls are silent
+- Wi‑Fi lost-music packet silence fill (helps stutter / refill loops on lossy links)
+- Wireless handoff: keep AirPlay tunnel if RFCOMM ends after setup has started
+- Passphrases redacted from iAP2 logcat traces
 - Wired and wireless CarPlay for BYD DiLink
 - In-car update checks against this Releases feed
 
